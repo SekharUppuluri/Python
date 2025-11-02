@@ -78,4 +78,4 @@ print("(10 + 3) * 2 ** 2 =", result)  #
 # This concludes the basics of operators in Python.
 # You can experiment with these operators to understand their behavior better.
 
-# End of basics2.py
+# End of operators.py
