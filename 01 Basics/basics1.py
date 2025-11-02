@@ -1,6 +1,4 @@
-# ===== Basics of Python =====
-# This script demonstrates basic Python concepts including variables,
-
+# ===== Basics1 of Python =====
 
 # ----- python output, comments, and case sensitivity -----
 # python is a case-sensitive language
