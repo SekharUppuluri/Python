@@ -32,3 +32,11 @@ for i in range(5):
     if i == 2:
         break  # Exit the loop when i is 2
     print("Iteration:", i)
+
+print("\nUsing pass:")
+for i in range(5):
+    if i == 2:
+        pass  # Do nothing when i is 2
+    print("Iteration:", i)
+
+# This concludes the basics of loops in Python.
