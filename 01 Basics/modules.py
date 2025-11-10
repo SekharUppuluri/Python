@@ -6,5 +6,9 @@
 import math 
 print("Using math module:")
 print("Square root of 16:", math.sqrt(16))
-
+print("Value of pi:", math.pi)
+# Importing specific functions from a module
+from math import factorial, pow
+print("Factorial of 5:", factorial(5))
+print("2 raised to the power 3:", pow(2, 3))
 
