@@ -12,3 +12,7 @@ from math import factorial, pow
 print("Factorial of 5:", factorial(5))
 print("2 raised to the power 3:", pow(2, 3))
 
+import keyword
+print(keyword.kwlist)
+print("Number of keywords in Python:", len(keyword.kwlist)) 
+
