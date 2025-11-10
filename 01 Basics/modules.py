@@ -20,3 +20,9 @@ import random
 print("Random number between 1 and 10:", random.randint(1, 10))
 print("Random choice from a list:", random.choice(['apple', 'banana', 'cherry']))
 
+import datetime
+now = datetime.datetime.now()
+print("Current date and time:", now)
+print("Current year:", now.year)
+print("Current month:", now.month)
+print("Current day:", now.day)
