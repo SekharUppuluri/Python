@@ -12,3 +12,9 @@ count = 0
 while count < 5:
     print("Count:", count)
     count += 1
+
+# Nested loops
+print("\nNested loops:")
+for i in range(3):
+    for j in range(2):
+        print(f"i: {i}, j: {j}")
