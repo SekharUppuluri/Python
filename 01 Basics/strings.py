@@ -31,3 +31,15 @@ print("Is digit:", "123".isdigit())
 print("Is alpha:", "Eren".isalpha())
 print("Length of name:", len(name))
 
+# String formatting
+age = 15
+formatted_string = "My name is {} and I am {} years old.".format(name, age)
+print(formatted_string)
+f_string = f"My name is {name} and I am {age} years old."
+print(f_string)
+
+# Escape sequences
+print("This is a line break:\nSee?")
+print("This is a tab:\tSee?")
+print("This is a backslash: \\")
+print("He said, \"Hello!\"")
