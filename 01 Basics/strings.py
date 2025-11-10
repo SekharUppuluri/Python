@@ -21,3 +21,13 @@ print("Every second character:", name[::2])
 print("Reversed string:", name[::-1])
 print(name[2:10:2])
 
+# String methods
+print("Uppercase:", name.upper())
+print("Lowercase:", name.lower())
+print("Count of 'e':", name.count('e'))
+print("Replaced name:", name.replace("Eren", "Armin"))
+print("Split name:", name.split(" "))
+print("Is digit:", "123".isdigit())
+print("Is alpha:", "Eren".isalpha())
+print("Length of name:", len(name))
+
