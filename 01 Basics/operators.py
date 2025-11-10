@@ -71,11 +71,6 @@ result = 10 + 3 * 2 ** 2
 print("10 + 3 * 2 ** 2 =", result)  # 10 + 3 * 4 = 10 + 12 = 22
 # Parentheses can change precedence
 result = (10 + 3) * 2 ** 2
-print("(10 + 3) * 2 ** 2 =", result)  #
+print("(10 + 3) * 2 ** 2 =", result)  # 13 * 4 = 52
 
-# (10 + 3) * 4 = 13 * 4 = 52
-52
 # This concludes the basics of operators in Python.
-# You can experiment with these operators to understand their behavior better.
-
-# End of operators.py
