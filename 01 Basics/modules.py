@@ -26,3 +26,7 @@ print("Current date and time:", now)
 print("Current year:", now.year)
 print("Current month:", now.month)
 print("Current day:", now.day)
+
+help('modules')  # Lists all available modules
+
+# This concludes the basics of modules in Python.
