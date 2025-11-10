@@ -28,3 +28,7 @@ if num >= 0:
         print("The number is positive.")
 else:
     print("The number is negative.")
+
+# Ternary operator (conditional expression)
+is_even = "Even" if num % 2 == 0 else "Odd"
+print(f"The number {num} is {is_even}.")
