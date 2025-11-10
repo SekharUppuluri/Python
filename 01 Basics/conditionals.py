@@ -18,3 +18,13 @@ elif marks >= 70:
     print("Grade: C")
 else:
     print("Grade: D")
+
+# Nested if statement
+num = int(input("Enter a number: "))
+if num >= 0:
+    if num == 0:
+        print("The number is zero.")
+    else:
+        print("The number is positive.")
+else:
+    print("The number is negative.")
