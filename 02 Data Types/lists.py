@@ -49,3 +49,22 @@ l1 = [1, 2, 3]
 l2 = [3, 2, 1]
 print("l1 == l2:", l1 == l2)  # False, because order matters in lists
 
+# How to create a list
+
+# Empty list
+print([])
+
+# 1D Homogeneous list (same data type)
+print("1D :", [1, 2, 3, 4, 5])
+
+# 2D list (nested list)
+print("2D :", [1, 2, 3, [4, 5]])
+
+# 3D list (deeply nested)
+print("3D :", [[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+
+# Heterogeneous list (mixed data types)
+print([1, True, 5.6, 5+6j, 'Hello'])
+
+# Using type conversion to create a list from a string
+print(list('hello'))
