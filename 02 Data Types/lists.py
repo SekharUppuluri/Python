@@ -208,3 +208,14 @@ L1 = [1, 2, 3, 4]
 L2 = [5, 6, 7, 8]
 
 print([i * j for i in L1 for j in L2])
+
+
+## 2 ways to traverse a list
+
+# - itemwise
+# - indexwise
+for item in languages:
+    print("Language:", item)
+for index in range(0, len(languages)):
+    print("Language at index", index, "is", languages[index])
+
