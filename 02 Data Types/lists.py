@@ -35,3 +35,17 @@ print("ID of 1:", id(1))
 print("ID of 2:", id(2))
 print("ID of 3:", id(3))
 
+# Characteristics of a List:
+# - Ordered: Items have a defined order, and that order will not change unless you explicitly do so.
+# - Mutable: You can change, add, and remove items after the list has been created.
+# - Allows Duplicates: Since lists are indexed, they can have items with the same value.
+# - Heterogeneous: Lists can contain items of different data types.
+# - Dynamic: Lists can grow and shrink in size as needed.
+# - Can be nested: Lists can contain other lists.
+# - Items can be accessed: Elements can be retrieved by index.
+# - Can contain any kind of objects in Python.
+
+l1 = [1, 2, 3]
+l2 = [3, 2, 1]
+print("l1 == l2:", l1 == l2)  # False, because order matters in lists
+
