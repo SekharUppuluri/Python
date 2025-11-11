@@ -78,4 +78,13 @@ print("Second last item:", my_list[-2])
 print("Items from index 1 to 3:", my_list[1:4]) # Slicing 
 print("Every second item:", my_list[::2]) # Slicing with step
 print("Reversed list:", my_list[::-1])  
-print("Nested item:", my_list[2][1])     
+print("Nested item:", my_list[2][1])    
+
+# Adding items to a List
+my_list.append('fig')                    # Append item at the end
+print("After append:", my_list)
+my_list.insert(1, 'blueberry')          # Insert item at index 1
+print("After insert:", my_list)
+my_list.extend(['grape', 'honeydew'])   # Extend list with another list
+print("After extend:", my_list)
+
