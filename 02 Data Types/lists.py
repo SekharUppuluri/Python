@@ -88,3 +88,9 @@ print("After insert:", my_list)
 my_list.extend(['grape', 'honeydew'])   # Extend list with another list
 print("After extend:", my_list)
 
+# Editing items in a List
+my_list[0] = 'apricot'                  # Indexing
+print("After editing first item:", my_list)
+my_list[1:3] = ['blackberry', 'cantaloupe']  # Slicing
+print("After editing multiple items:", my_list)
+
