@@ -105,3 +105,16 @@ print("After del:", my_list)
 my_list.clear()                         # Clear the entire list
 print("After clear:", my_list)
 
+# Operations on Lists
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+combined = list1 + list2                 # Concatenation
+print("Concatenated list:", combined)
+repeated = list1 * 3                     # Repetition
+print("Repeated list:", repeated)
+# Check membership
+print("Is 2 in list1?", 2 in list1)
+print("Is 5 not in list1?", 5 not in list1) 
+# Iterate through a list
+for item in list1:
+    print("Item:", item)
