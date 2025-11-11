@@ -211,11 +211,40 @@ print([i * j for i in L1 for j in L2])
 
 
 ## 2 ways to traverse a list
-
 # - itemwise
 # - indexwise
+
 for item in languages:
     print("Language:", item)
 for index in range(0, len(languages)):
     print("Language at index", index, "is", languages[index])
 
+## Zip
+# The zip() function returns a zip object, which is an iterator of tuples where the first item in each passed iterator is paired together, and then the second item in each passed iterator are paired together.
+
+# If the passed iterators have different lengths, the iterator with the least items decides the length of the new iterator.
+
+list_a = [1, 2, 3]
+list_b = ['a', 'b', 'c', 'd', 'e']
+zipped = zip(list_a, list_b)
+
+for item in zipped:
+    print("Zipped item:", item)
+
+L1 = [1,2,3,4]
+L2 = [-1,-2,-3,-4]
+list(zip(L1, L2))
+
+print([i * j for i, j in zip(L1, L2)])
+
+L = [1,2,print,type,input]
+
+print(L)
+
+# Nested Lists
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+print("Element at row 1, column 2:", matrix[1][2]) # Accessing element '6'
