@@ -27,6 +27,7 @@
 # - Memory
 
 L = [1,2,3]
+
 print("ID of L:", id(L))
 print("ID of L[0]:", id(L[0]))
 print("ID of L[1]:", id(L[1]))
@@ -71,6 +72,7 @@ print(list('hello'))
 
 # Access items from a List
 my_list = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+
 print("First item:", my_list[0])        # Accessing first item
 print("Second item:", my_list[1])       
 print("Last item:", my_list[-1])        # Accessing last item
@@ -112,9 +114,42 @@ combined = list1 + list2                 # Concatenation
 print("Concatenated list:", combined)
 repeated = list1 * 3                     # Repetition
 print("Repeated list:", repeated)
+
 # Check membership
 print("Is 2 in list1?", 2 in list1)
-print("Is 5 not in list1?", 5 not in list1) 
+print("Is 5 not in list1?", 5 not in list1)
+
 # Iterate through a list
 for item in list1:
     print("Item:", item)
+
+# Functions on Lists
+numbers = [10, 20, 30, 40, 50]
+
+print("Length of numbers:", len(numbers))
+print("Max of numbers:", max(numbers))
+print("Min of numbers:", min(numbers))
+print("Sum of numbers:", sum(numbers))
+print("Sorted numbers:", sorted(numbers, reverse=True))
+
+print("Index of 30:", numbers.index(30))
+print("Count of 20:", numbers.count(20))
+
+# sort vs sorted
+# sorted() returns a new sorted list without modifying the original
+original = [3, 1, 4, 1, 5]
+print("Original list:", original)
+sorted_copy = sorted(original)
+print("After sorted(): original =", original, ", sorted_copy =", sorted_copy)
+# sort() modifies the list in place and returns None
+original.sort()
+print("After sort(): original =", original)
+
+numbers.reverse()   # permanently reverses the list
+print("Numbers after reverse:", numbers)
+
+print("ID of numbers before copy:", id(numbers))
+copied_numbers = numbers.copy()  # Shallow copy
+print("ID of numbers after copy:", id(numbers))
+print("ID of copied_numbers:", id(copied_numbers))
+print("Copy of numbers:", copied_numbers)
