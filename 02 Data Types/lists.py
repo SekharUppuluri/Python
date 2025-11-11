@@ -94,3 +94,14 @@ print("After editing first item:", my_list)
 my_list[1:3] = ['blackberry', 'cantaloupe']  # Slicing
 print("After editing multiple items:", my_list)
 
+# Deleting items from a List
+my_list.remove('date')                   # Remove by value
+print("After remove:", my_list)
+popped_item = my_list.pop(2)            # Remove by index
+print("After pop:", my_list)
+print("Popped item:", popped_item)
+del my_list[0]                          # Delete by index
+print("After del:", my_list)
+my_list.clear()                         # Clear the entire list
+print("After clear:", my_list)
+
