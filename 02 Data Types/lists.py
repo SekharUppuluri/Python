@@ -68,3 +68,14 @@ print([1, True, 5.6, 5+6j, 'Hello'])
 
 # Using type conversion to create a list from a string
 print(list('hello'))
+
+# Access items from a List
+my_list = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+print("First item:", my_list[0])        # Accessing first item
+print("Second item:", my_list[1])       
+print("Last item:", my_list[-1])        # Accessing last item
+print("Second last item:", my_list[-2])
+print("Items from index 1 to 3:", my_list[1:4]) # Slicing 
+print("Every second item:", my_list[::2]) # Slicing with step
+print("Reversed list:", my_list[::-1])  
+print("Nested item:", my_list[2][1])     
