@@ -199,10 +199,10 @@ basket = ['apple', 'guava', 'cherry', 'banana']
 my_fruits = ['apple', 'kiwi', 'grapes', 'banana']
 
 # add new list from my_fruits and items if the fruit exists in basket and also starts with 'a'
-
 print([fruit for fruit in my_fruits if fruit in basket if fruit.startswith('a')])
 # Print a (3,3) matrix using list comprehension -> Nested List comprehension
 print([[i * j for i in range(1, 4)] for j in range(1, 4)])
+
 # cartesian products -> List comprehension on 2 lists together
 L1 = [1, 2, 3, 4]
 L2 = [5, 6, 7, 8]
@@ -221,7 +221,6 @@ for index in range(0, len(languages)):
 
 ## Zip
 # The zip() function returns a zip object, which is an iterator of tuples where the first item in each passed iterator is paired together, and then the second item in each passed iterator are paired together.
-
 # If the passed iterators have different lengths, the iterator with the least items decides the length of the new iterator.
 
 list_a = [1, 2, 3]
@@ -248,3 +247,21 @@ matrix = [
     [7, 8, 9]
 ]
 print("Element at row 1, column 2:", matrix[1][2]) # Accessing element '6'
+
+## Disadvantages of Python Lists
+# - Slow
+# - Risky usage
+# - Eats up more memory
+# - Lists are mutable
+# - Not suitable for large data sets
+# - Lack of type safety
+
+a = [1,2,3]
+b = a.copy()
+
+print(a)
+print(b)
+
+a.append(4)
+print(a)
+print(b)
