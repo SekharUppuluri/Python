@@ -1,4 +1,4 @@
-# ## 1. Lists
+# ===== Lists =====
 
 # - What are Lists?
 # - Lists Vs Arrays
