@@ -74,3 +74,20 @@ print(t3)
 t = (1,2,3,4,5)
 print(t[-1:-4:-1])
 
+# Operations on Tuples
+
+# Concatenation using +
+t1 = (1, 2, 3, 4)
+t2 = (5, 6, 7, 8)
+print("Concatenation (t1 + t2):", t1 + t2)
+
+# Repetition using *
+print("Repetition (t1 * 3):", t1 * 3)
+
+# Membership testing
+print("Membership (1 in t1):", 1 in t1)
+
+# Iteration
+print("Iteration over t1:")
+for i in t1:
+    print(i)
