@@ -8,3 +8,30 @@
 # - Ordered
 # - Unchangeble
 # - Allows duplicate
+
+# Creating a tuple
+
+# Empty tuple
+t1 = ()
+print(t1)
+
+# Tuple with a single item (note the comma)
+t2 = ('hello',)
+print(t2)
+print(type(t2))
+
+# Homogeneous tuple (all elements of the same type)
+t3 = (1, 2, 3, 4)
+print(t3)
+
+# Heterogeneous tuple (elements of different types)
+t4 = (1, 2.5, True, [1, 2, 3])
+print(t4)
+
+# Nested tuple
+t5 = (1, 2, 3, (4, 5))
+print(t5)
+
+# Using type conversion to create a tuple from a string
+t6 = tuple('hello')
+print(t6)
