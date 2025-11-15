@@ -164,3 +164,32 @@ b = a
 a = a + (4,)  # Creates a new tuple
 print("a:", a)
 print("b:", b)  # b remains unchanged because tuples are immutable
+
+# ===== Why Use Tuples? =====
+# - Simple syntax
+# - Tuple unpacking
+
+# Basic tuple unpacking
+a, b, c = (1, 2, 3)
+print(a, b, c)
+
+# Unpacking with fewer variables (will raise ValueError due to mismatch)
+# a, b = (1, 2, 3)  # Commented out to avoid error
+# print(a, b)
+
+# Swapping values using tuple unpacking
+a = 1
+b = 2
+a, b = b, a
+print(a, b)
+
+# Extended unpacking with *others
+a, b, *others = (1, 2, 3, 4)
+print(a, b)
+print(others)
+
+# ===== Zipping Tuples =====
+a = (1, 2, 3, 4)
+b = (5, 6, 7, 8)
+zipped = tuple(zip(a, b))
+print(zipped)
