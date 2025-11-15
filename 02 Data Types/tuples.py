@@ -91,3 +91,21 @@ print("Membership (1 in t1):", 1 in t1)
 print("Iteration over t1:")
 for i in t1:
     print(i)
+
+# Functions Applicable to Tuples
+# len/sum/min/max/sorted
+t = (1, 2, 3, 4)
+print("Length of t:", len(t))
+print("Sum of t:", sum(t))
+print("Min of t:", min(t))
+print("Max of t:", max(t))
+print("Sorted t (reverse=True):", sorted(t, reverse=True))
+
+# count
+t = (1, 2, 3, 4, 5)
+print("Count of 5 in t:", t.count(5))  
+print("Count of 50 in t:", t.count(50))  
+
+# index
+print("Index of 5 in t:", t.index(5)) 
+# print("Index of 50 in t:", t.index(50))  # This would raise ValueError since 50 not in t
