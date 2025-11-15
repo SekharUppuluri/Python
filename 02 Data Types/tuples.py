@@ -66,3 +66,11 @@ t3[0] = 100
 print("Current tuple t3:", t3)
 # Adding directly is not possible due to immutability
 
+# Deleting a Tuple
+print(t3)
+del t3
+print(t3)
+
+t = (1,2,3,4,5)
+print(t[-1:-4:-1])
+
