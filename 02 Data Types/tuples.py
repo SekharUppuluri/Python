@@ -60,3 +60,9 @@ print("Slice t3[::-1]:", t3[::-1])
 print("Original tuple t3:", t3)
 t3[0] = 100 
 # Tuples are immutable, just like strings
+
+
+# Adding Items to a Tuple
+print("Current tuple t3:", t3)
+# Adding directly is not possible due to immutability
+
