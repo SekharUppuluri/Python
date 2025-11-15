@@ -109,3 +109,58 @@ print("Count of 50 in t:", t.count(50))
 # index
 print("Index of 5 in t:", t.index(5)) 
 # print("Index of 50 in t:", t.index(50))  # This would raise ValueError since 50 not in t
+
+# ===== Differences between Lists and Tuples =====
+
+# Key Differences:
+# - Syntax: Lists use [], tuples use ()
+# - Mutability: Lists are mutable, tuples are immutable
+# - Speed: Tuples are faster for iteration
+# - Memory: Tuples use less memory
+# - Built-in functionality: Lists have more methods
+# - Error prone: Lists can be modified accidentally
+# - Usability: Tuples for fixed data, lists for dynamic data
+
+import time
+import sys
+
+# Speed Comparison
+print("Speed Comparison:")
+L = list(range(1000000))  # Reduced size for practicality
+T = tuple(range(1000000))
+
+start = time.time()
+for i in L:
+    i * 5
+print('List time:', time.time() - start)
+
+start = time.time()
+for i in T:
+    i * 5
+print('Tuple time:', time.time() - start)
+
+# Memory Comparison
+print("\nMemory Comparison:")
+L = list(range(1000))
+T = tuple(range(1000))
+
+print('List size:', sys.getsizeof(L))
+print('Tuple size:', sys.getsizeof(T))
+
+# Mutability Example with Lists
+print("\nMutability Example with Lists:")
+a = [1, 2, 3]
+b = a
+
+a.append(4)
+print("a:", a)
+print("b:", b)  # b is affected because lists are mutable
+
+# Immutability Example with Tuples
+print("\nImmutability Example with Tuples:")
+a = (1, 2, 3)
+b = a
+
+a = a + (4,)  # Creates a new tuple
+print("a:", a)
+print("b:", b)  # b remains unchanged because tuples are immutable
