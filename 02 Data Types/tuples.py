@@ -35,3 +35,21 @@ print(t5)
 # Using type conversion to create a tuple from a string
 t6 = tuple('hello')
 print(t6)
+
+# Accessing Items in a Tuple
+# - Indexing
+# - Slicing
+
+# Example tuple
+print("Tuple t3:", t3) 
+
+# Indexing examples
+print("First element (t3[0]):", t3[0])      
+print("Last element (t3[-1]):", t3[-1])    
+
+# Nested tuple access
+print("Nested access (t5[-1][0]):", t5[-1][0]) 
+
+# Slicing examples (adding for completeness)
+print("Slice t3[1:3]:", t3[1:3])            
+print("Slice t3[::-1]:", t3[::-1])          
