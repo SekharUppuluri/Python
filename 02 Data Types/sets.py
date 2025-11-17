@@ -75,3 +75,25 @@ print(S)
 # update 
 S.update([6, 7, 8])
 print(S)
+
+# Deleting Elements
+
+# del (not applicable for sets, as sets don't support indexing)
+s = {1, 2, 3, 4, 5}
+# del s[0]  # TypeError: 'set' object doesn't support item deletion by index
+
+# discard (removes element if present, no error if not)
+s.discard(50)
+print(s)  # {1, 2, 3, 4, 5} (unchanged, since 50 not in set)
+
+# remove (removes element if present, raises KeyError if not)
+# s.remove(50)  # KeyError if 50 not in set
+
+# pop (removes and returns an arbitrary element)
+popped = s.pop()
+print(f"Popped: {popped}")
+print(s)
+
+# clear (removes all elements)
+s.clear()
+print(s)  # set()
