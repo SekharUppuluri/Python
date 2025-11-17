@@ -40,3 +40,8 @@ print(s5)
 # Sets can't contain mutable items (like lists)
 # s6 = {1, 2, [3, 4]}  # TypeError
 # print(s6)
+
+s1 = {1,2,3}
+s2 = {3,2,1}
+
+print(s1 == s2)  # True, because sets are unordered
