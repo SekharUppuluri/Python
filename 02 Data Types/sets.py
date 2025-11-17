@@ -45,3 +45,33 @@ s1 = {1,2,3}
 s2 = {3,2,1}
 
 print(s1 == s2)  # True, because sets are unordered
+
+# Accessing Set Elements
+# Sets are unordered, so we cannot access elements by index or slice.
+# Attempting to do so will raise a TypeError.
+s1 = {1, 2, 3, 4}
+# s1[0:3]  # 'set' object is not subscriptable
+
+# We can iterate through the set instead:
+for item in s1:
+    print(item)
+
+# Editing Sets
+# Sets are mutable, but we cannot edit individual elements by index.
+# Attempting to do so will raise a TypeError.
+s1 = {1, 2, 3, 4}
+# s1[0] = 100  #  'set' object does not support item assignment
+
+# To modify, we can remove and add elements:
+s1.remove(1)
+s1.add(100)
+print(s1)
+
+# Adding Elements
+S = {1, 2, 3, 4}
+# add (single element)
+S.add(5)
+print(S)
+# update 
+S.update([6, 7, 8])
+print(S)
