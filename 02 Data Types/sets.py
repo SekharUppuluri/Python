@@ -170,3 +170,24 @@ s1.symmetric_difference_update(s2)
 print(s1)
 print(s2)
 
+# isdisjoint/issubset/issuperset
+s1 = {1,2,3,4}
+s2 = {7,8,5,6}
+
+s1.isdisjoint(s2)
+
+
+s1 = {1,2,3,4,5}
+s2 = {3,4,5}
+
+s1.issuperset(s2)
+
+
+# copy
+s1 = {1,2,3}
+s2 = s1.copy()
+
+print(s1)
+print(s2)
+
+
