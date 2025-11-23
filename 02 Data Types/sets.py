@@ -117,3 +117,13 @@ s1 ^ s2
 # Iteration
 for i in s1:
   print(i)
+
+
+# Set Functions
+# len/sum/min/max/sorted
+s = {3,1,4,5,2,7}
+len(s)
+sum(s)
+min(s)
+max(s)
+sorted(s,reverse=True)
