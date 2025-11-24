@@ -145,3 +145,42 @@ d1.update(d2)
 print("Updated d1:", d1)
 
 
+# ----- Dictionary Comprehension -----
+
+# Print 1st 10 numbers and their squares
+squares = {i: i**2 for i in range(1, 11)}
+print("Squares of first 10 numbers:", squares)
+
+# Using existing dict
+distances = {'delhi': 1000, 'mumbai': 2000, 'bangalore': 3000}
+print("Items:", distances.items())
+print("Keys:", distances.keys())
+print("Values:", distances.values())
+
+# Convert distances to miles (1 km = 0.62 miles)
+distances_miles = {key: value * 0.62 for (key, value) in distances.items()}
+print("Distances in miles:", distances_miles)
+
+# Using zip
+days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+temp_C = [30.5, 32.6, 31.8, 33.4, 29.8, 30.2, 29.9]
+day_temp = {i: j for (i, j) in zip(days, temp_C)}
+print("Day temperatures:", day_temp)
+
+# Using if condition
+products = {'phone': 10, 'laptop': 0, 'charger': 32, 'tablet': 0}
+available_products = {key: value for (key, value) in products.items() if value > 0}
+print("Available products:", available_products)
+
+# Nested Comprehension
+# Print tables of numbers from 2 to 4
+tables = {i: {j: i * j for j in range(1, 11)} for i in range(2, 5)}
+print("Multiplication tables for 2 to 4:", tables)
+
+# Example output for tables (first 4 entries per table for brevity)
+example_tables = {
+    2: {1: 2, 2: 4, 3: 6, 4: 8},
+    3: {1: 3, 2: 6, 3: 9, 4: 12},
+    4: {1: 4, 2: 8, 3: 12, 4: 16}
+}
+print("Example tables (first 4):", example_tables)
