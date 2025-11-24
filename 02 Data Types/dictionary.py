@@ -106,3 +106,16 @@ print("After deleting 'maths' from nested dict:", s)
 s['subjects']['dsa'] = 80
 s['subjects']['english'] = 40
 print("After editing nested dict:", s)
+
+
+# ----- Dictionary Operations -----
+
+# Membership: Check if a key exists in the dictionary
+print("Dictionary s:", s)
+print("'name' in s:", 'name' in s)
+
+# Iteration: Loop through keys and access values
+d = {'name': 'nitish', 'gender': 'male', 'age': 33}
+for key in d:
+    print(f"Key: {key}, Value: {d[key]}")
+
