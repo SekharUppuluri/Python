@@ -101,3 +101,8 @@ print("After clear():", d)
 # Removing from a nested dictionary
 del s['subjects']['maths']
 print("After deleting 'maths' from nested dict:", s)
+
+# Editing key-value pairs in a dictionary
+s['subjects']['dsa'] = 80
+s['subjects']['english'] = 40
+print("After editing nested dict:", s)
