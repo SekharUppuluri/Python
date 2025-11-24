@@ -119,3 +119,30 @@ d = {'name': 'nitish', 'gender': 'male', 'age': 33}
 for key in d:
     print(f"Key: {key}, Value: {d[key]}")
 
+
+# ----- Dictionary Methods/Functions -----
+
+# len/sorted
+print("Length of d:", len(d))
+print("Dictionary d:", d)
+print("Sorted keys in reverse:", sorted(d, reverse=True))
+print("Max key:", max(d))
+print("Min key:", min(d))
+print("Sum of keys (if numeric):", sum(d.keys()))  # only works if keys are numeric
+
+# items/keys/values
+print("Dictionary d:", d)
+print("Items:", d.items())
+print("Keys:", d.keys())
+print("Values:", d.values())
+
+# copy
+d_copy = d.copy()
+print("Copied dictionary:", d_copy)
+
+# update
+d1 = {1: 2, 3: 4, 4: 5}
+d2 = {4: 7, 6: 8}
+d1.update(d2)
+print("Updated d1:", d1)
+
