@@ -77,3 +77,27 @@ s['subjects']['ds'] = 75
 print("After adding 'ds' to nested dict:", s)
 
 
+# Removing key-value pairs from a dictionary
+
+# Example dictionary
+d = {'name': 'nitish', 'age': 32, 3: 3, 'gender': 'male', 'weight': 72}
+
+# Using pop() to remove a specific key-value pair
+d.pop(3)
+print("After pop(3):", d)
+
+# Using popitem() to remove the last inserted key-value pair
+d.popitem()
+print("After popitem():", d)
+
+# Using del to remove a specific key-value pair
+del d['name']
+print("After del d['name']:", d)
+
+# Using clear() to remove all key-value pairs
+d.clear()
+print("After clear():", d)
+
+# Removing from a nested dictionary
+del s['subjects']['maths']
+print("After deleting 'maths' from nested dict:", s)
