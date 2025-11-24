@@ -51,3 +51,29 @@ print("Dictionary with duplicate keys:", d5)
 # 7. Using immutable items as keys (tuples are allowed, lists are not)
 d6 = {'name': 'Reddy', (1, 2, 3): 2}
 print("Dictionary with tuple as key:", d6)
+
+# Accessing Dictionary Elements
+my_dict = {'name': 'Jack', 'age': 26}
+# Using []
+print("Accessing 'age' with []:", my_dict['age'])
+# Using get
+print("Accessing 'age' with get:", my_dict.get('age'))
+
+# Accessing nested dictionary
+print("Accessing nested 'maths':", s['subjects']['maths'])
+
+
+# Adding key-value pairs to a dictionary
+
+# Adding to a simple dictionary
+d4['gender'] = 'male'
+print("After adding 'gender':", d4)
+
+d4['weight'] = 72
+print("After adding 'weight':", d4)
+
+# Adding to a nested dictionary
+s['subjects']['ds'] = 75
+print("After adding 'ds' to nested dict:", s)
+
+
