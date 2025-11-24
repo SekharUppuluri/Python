@@ -1,10 +1,8 @@
 # === Dictionary ===
 
-# Dictionary in Python is a collection of keys values, used to store data values like a map, which, unlike other data types which hold only a single value as an element.
-
-# In some languages it is known as map or assosiative arrays.
-
-# dict = { 'name' : 'nitish' , 'age' : 33 , 'gender' : 'male' }
+#  - Dictionary in Python is a collection of keys values, used to store data values like a map, which, unlike other data types which hold only a single value as an element.
+#  - In some languages it is known as map or assosiative arrays.
+#  - dict = { 'name' : 'nitish' , 'age' : 33 , 'gender' : 'male' }
 
 # --- Characteristics: ---
 
@@ -63,7 +61,7 @@ print("Accessing 'age' with get:", my_dict.get('age'))
 print("Accessing nested 'maths':", s['subjects']['maths'])
 
 
-# Adding key-value pairs to a dictionary
+# ----- Adding key-value pairs to a dictionary -----
 
 # Adding to a simple dictionary
 d4['gender'] = 'male'
@@ -77,7 +75,7 @@ s['subjects']['ds'] = 75
 print("After adding 'ds' to nested dict:", s)
 
 
-# Removing key-value pairs from a dictionary
+# ----- Removing key-value pairs from a dictionary -----
 
 # Example dictionary
 d = {'name': 'nitish', 'age': 32, 3: 3, 'gender': 'male', 'weight': 72}
@@ -145,4 +143,5 @@ d1 = {1: 2, 3: 4, 4: 5}
 d2 = {4: 7, 6: 8}
 d1.update(d2)
 print("Updated d1:", d1)
+
 
