@@ -2,7 +2,7 @@
 """
     Functions are reusable blocks of code that perform a specific task.
     They help in organizing code, improving readability, and reducing redundancy.
-"""
+""" 
 
 def python_fun():
     print("This is a python function")
@@ -12,7 +12,14 @@ def python_fun():
 python_fun()
 
 print(type.__doc__)  # Documentation for the type function
+# docstring for user-defined function
+def sample_function():
+    """This is a sample function to demonstrate docstrings in Python."""
+    pass
+print(sample_function.__doc__)  # Accessing the docstring
 
+
+# ----- Function Parameters and Arguments -----
 """
      ----- Parameters vs Arguments:
     - Parameters are the variables defined in the function definition.
@@ -92,5 +99,100 @@ def memory_example(x):
 result = memory_example(10)
 print("Result from memory_example:", result)
 
+# ----- Variables Scope -----
+"""
+    - Local Scope: Variables defined within a function are local to that function.
+    - Global Scope: Variables defined outside any function are global and can be accessed anywhere in the code.
+    - Nonlocal Scope: Used in nested functions to refer to variables in the nearest enclosing scope that is not global.
+"""
+# Local Scope 
+def local_scope():
+    local_var = "I am local"
+    print(local_var)
+ 
+local_scope()
+#print(local_var) # This will raise an error as local_var is not defined globally
 
+# Global Scope
+global_var = "I am global"
+def global_scope():
+    print(global_var)
+global_scope()
+print(global_var)  # Accessible here as well
+
+# Nonlocal Scope
+def outer_function():
+    outer_var = "I am outer"
+    def inner_function():
+        nonlocal outer_var
+        outer_var = "I am modified outer"
+        print(outer_var)
+    inner_function()
+    print(outer_var)
+outer_function()
+
+# Note: Avoid using global variables excessively as they can make code harder to debug and maintain.
+
+# ----- Nested Functions -----
+def outer():
+    print("This is the outer function")
+    def inner():
+        print("This is the inner function")
+    inner()  # Calling inner function within outer function
+outer()  # Calling outer function
+# You can also return the inner function
+def outer_return():
+    print("Outer function called")
+    def inner():
+        print("Inner function called")
+    return inner  # Returning the inner function without calling it
+inner_function = outer_return()  # Call outer_return to get inner function
+inner_function()  # Now call the returned inner function
+# This allows for function factories and decorators
+
+def f():
+  def g():
+    print('inside function g')
+    f()
+  g()
+  print('inside function f')
+f()  # Note: Be cautious with recursion to avoid infinite loops.
+
+
+# ----- fUNCTIONS ARE FIRST-CLASS CITIZENS -----
+"""
+    In Python, functions are first-class citizens, meaning they can be:
+    - Assigned to variables
+    - Passed as arguments to other functions
+    - Returned from other functions
+    - Stored in data structures like lists, tuples, and dictionaries
+"""
+# # Assigning function to a variable
+# def greet(name):
+#     return f"Hello, {name}!"
+# say_hello = greet
+# print(say_hello("Eren"))
+# # Passing function as an argument
+# def call_function(func, value):
+#     return func(value)
+# result = call_function(greet, "Mikasa")
+# print(result)
+# # Returning function from another function
+# def outer_function():
+#     def inner_function(name):
+#         return f"Hi, {name}!"
+#     return inner_function
+# new_greet = outer_function()
+# print(new_greet("Eren"))
+# # Storing functions in a list
+# function_list = [greet, new_greet]
+# for func in function_list:
+#     print(func("Armin"))
+# # Storing functions in a dictionary
+# function_dict = {
+#     'greet': greet,
+#     'new_greet': new_greet
+# }
+# print(function_dict['greet']("Eren"))
+# print(function_dict['new_greet']("Mikasa"))
 
