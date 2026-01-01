@@ -196,3 +196,67 @@ f()  # Note: Be cautious with recursion to avoid infinite loops.
 # print(function_dict['greet']("Eren"))
 # print(function_dict['new_greet']("Mikasa"))
 
+# ----- BENEFITS OF FUNCTIONS -----
+"""
+    - Code Reusability: Write once, use multiple times.
+    - Modularity: Break down complex problems into smaller, manageable functions.
+    - Readability: Clear structure and organization of code.
+    - Maintainability: Easier to update and fix bugs in isolated functions.
+    - Testing: Functions can be tested independently for correctness.
+"""
+
+# Example demonstrating benefits
+def calculate_area(radius):
+    import math
+    return math.pi * radius * radius
+area1 = calculate_area(5)
+area2 = calculate_area(10)
+print("Area of circle with radius 5:", area1)
+print("Area of circle with radius 10:", area2)
+# This function can be reused for different radius values without rewriting the area calculation logic.
+
+# ------ lambda Functions ------
+"""
+    - Lambda functions are small anonymous functions defined using the lambda keyword.
+    - They can take any number of arguments but can only have one expression.
+    - Syntax: lambda arguments: expression
+    - Commonly used for short, throwaway functions, especially as arguments to higher-order functions like map(), filter(), and sorted().
+"""
+#  lambda function
+square = lambda x: x * x
+print("Square of 6 using lambda:", square(6))
+
+# ------- Difference between lambda and regular functions -----
+"""
+    - Lambda functions are limited to a single expression and cannot contain statements or annotations.
+    - Regular functions can have multiple expressions, statements, and annotations.
+    - Lambda functions are syntactically restricted to a single line.
+    - Regular functions can be more verbose and include documentation.
+"""
+#  regular function
+def regular_square(x):
+    return x * x
+print("Square of 6 using regular function:", regular_square(6))
+#  lambda function
+lambda_square = lambda x: x * x
+print("Square of 6 using lambda function:", lambda_square(6))
+
+# Using lambda with map()
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = list(map(lambda x: x * x, numbers))
+print("Squared numbers using map:", squared_numbers)
+
+# Using lambda with filter()
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print("Even numbers using filter:", even_numbers)
+
+# Using lambda with sorted()
+students = [('Eren', 25), ('Mikasa', 20), ('Armin', 23)]
+sorted_students = sorted(students, key=lambda student: student[1])
+print("Students sorted by age using lambda:", sorted_students)
+# Note: For complex functions, it's better to use regular function definitions for clarity.
+
+# using lambda with reduce()
+from functools import reduce
+product = reduce(lambda x, y: x * y, numbers)
+print("Product of numbers using reduce:", product)
