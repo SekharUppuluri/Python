@@ -5,7 +5,7 @@
 """ 
 
 def python_fun():
-    print("This is a python function")
+    print("--- This is a python function ---")
     return
 
 # Calling the function
