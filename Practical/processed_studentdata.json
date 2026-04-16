@@ -1,0 +1,32 @@
+[
+    {
+        "Name":"Arjun",
+        "Age":25,
+        "Marks":80,
+        "processed_flag":true
+    },
+    {
+        "Name":"Sita",
+        "Age":22,
+        "Marks":90,
+        "processed_flag":true
+    },
+    {
+        "Name":"Ravi",
+        "Age":23,
+        "Marks":75,
+        "processed_flag":true
+    },
+    {
+        "Name":"Anu",
+        "Age":21,
+        "Marks":85,
+        "processed_flag":true
+    },
+    {
+        "Name":"Srinu",
+        "Age":24,
+        "Marks":78,
+        "processed_flag":true
+    }
+]
